@@ -1,13 +1,14 @@
 import React from 'react'
 import img from './first.avif'
 
-export default function Product() {
+export default function Product({products}) {
   return <>
     <div className="container">
         <div className="row">
             <div className="col-md-12 m-auto">
-            <div className="ProductsCon my-5">
-  <div class="card" style={{width: 18+"rem"}}>
+            <div className="ProductsCon row gy-3 my-5">
+{products.map((product) => <div className="col-md-4">
+    <div class="card" style={{width: 18+"rem"}}>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -35,11 +36,14 @@ export default function Product() {
   </button>
 </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-dark">Go somewhere</a>
+    <h5 class="card-title">{product.title}</h5>
+    <p class="card-text">{product.Desc}</p>
+    <h3>{product.Price}</h3>
+    <h6>[{product.sizes.map((size) => `${size}, `)}]</h6>
+    <a href="#" class="btn btn-dark">Buy It</a>
   </div>
 </div>
+</div> )}
   </div>
             </div>
         </div>
