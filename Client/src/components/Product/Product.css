@@ -1,0 +1,28 @@
+.popUp {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.589);
+    top: 0px;
+    left: 0px;
+    margin-top: 0px !important;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardPopUp {
+    width: 80% !important;
+    height: 80% !important;
+    overflow: hidden;
+}
+
+.imgCover {
+    overflow: hidden;
+}
+.imgProductDetails {
+    transition: all 0.5s linear;
+}
+.imgProductDetails:hover {
+    transform: scale(1.9);
+}

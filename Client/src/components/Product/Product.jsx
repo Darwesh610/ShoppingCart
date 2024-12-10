@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from './first.avif'
+import './Product.css'
 
 export default function Product({products}) {
+  const [productDetails, setproductDetails] = useState('')
+
+  function openModal(product){
+    setproductDetails(product);
+    console.log(product);
+  }
+
   return <>
     <div className="container">
         <div className="row">
             <div className="col-md-12 m-auto">
             <div className="ProductsCon row gy-3 my-5">
-{products.map((product) => <div className="col-md-4">
+{products.map((product) => <div key={product.id} className="col-md-4" onClick={() => openModal(product)}>
     <div class="card" style={{width: 18+"rem"}}>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -44,6 +52,21 @@ export default function Product({products}) {
   </div>
 </div>
 </div> )}
+      {productDetails === "" ? "" : <div className='popUp' onClick={() => setproductDetails('')}><div class="card cardPopUp mb-3" style={{width: 18+"rem"}}>
+  <div class="row g-0">
+    <div class="col-md-4 imgCover">
+      <img src={img} class="img-fluid rounded-start imgProductDetails" alt="..."/>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{productDetails.title}</h5>
+        <p class="card-text">{productDetails.Desc}</p>
+        <h1>{productDetails.Price}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</div>}
   </div>
             </div>
         </div>
