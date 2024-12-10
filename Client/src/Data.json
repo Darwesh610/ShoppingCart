@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "title": "High Neck Pullover",
+        "ImageUrl":["./components/Product/2.avif" , "./components/Product/2-1.avif" , "./components/Product/2-2.avif"],
+        "Desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet sed blanditiis aperiam facilis, nostrum natus aliquam distinctio voluptatem eos quas officia tenetur at. Necessitatibus alias quaerat quam voluptates excepturi?",
+        "Price":500,
+        "sizes":["M","L" , "XL" , "2XL"]
+    },
+        {
+        "id":"2",
+        "title": "High Neck Light Brown Pullover",
+        "ImageUrl":["./components/Product/3-1.avif" , "./components/Product/3-2.avif" , "./components/Product/3-3.avif"],
+        "Desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet sed blanditiis aperiam facilis, nostrum natus aliquam distinctio voluptatem eos quas officia tenetur at. Necessitatibus alias quaerat quam voluptates excepturi?",
+        "Price":750,
+        "sizes":["L" , "XL" , "2XL" , "3XL"]
+    },
+        {
+        "id":"3",
+        "title": "White & Black lined Pullover",
+        "ImageUrl":["./components/Product/4-1.avif" , "./components/Product/4-2.avif" , "./components/Product/4-3.avif"],
+        "Desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet sed blanditiis aperiam facilis, nostrum natus aliquam distinctio voluptatem eos quas officia tenetur at. Necessitatibus alias quaerat quam voluptates excepturi?",
+        "Price":1500,
+        "sizes":["S","M","L" , "XL" , "2XL"]
+    }
+
+]
